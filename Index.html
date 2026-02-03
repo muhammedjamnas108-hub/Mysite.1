@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: pink;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 42px;
+      margin-top: 40vh;
+      animation: fadeOut 3s forwards;
+    }
+    @keyframes fadeOut {
+      0% {opacity: 1;}
+      70% {opacity: 1;}
+      100% {opacity: 0;}
+    }
+    .content {
+      display: none;
+      margin-top: 30vh;
+    }
+    button {
+      padding: 15px 40px;
+      font-size: 22px;
+      border-radius: 30px;
+      border: none;
+      background: hotpink;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<h1 id="intro">Hey naaannyy 💖</h1>
+
+<div class="content" id="main">
+  <h2>Will you be my Valentine? 💘</h2>
+  <br>
+  <button onclick="goYes()">Yes 💕</button>
+</div>
+
+<script>
+  setTimeout(() => {
+    document.getElementById("intro").style.display = "none";
+    document.getElementById("main").style.display = "block";
+  }, 3000);
+
+  function goYes() {
+    window.location.href = "yes.html";
+  }
+</script>
+
+</body>
+</html>
